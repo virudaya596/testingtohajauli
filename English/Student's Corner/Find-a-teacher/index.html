@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Teacher | Hajauli - Ballia {U.P.}</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="Files/Logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+<nav id="navbar">
+    <ul class="navbar-items flexbox-col">
+      <li class="navbar-logo flexbox-left">
+        <a class="navbar-item-inner flexbox">
+            
+    <img src="Files/logo.png" width="50%" alt="" class="logo">
+        </a>
+
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../../Home/index.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Home</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../../Admin-Login/index.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Admin Login</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../News/index.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="newspaper-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Latest News</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../Student's Corner/index.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Student's Corner</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../Services & Plans/Get-Your-Ad/ad.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="tv-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Get Your Ad</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../../Services & Plans/Find-a-Shop/index.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="storefront-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Find A Shop</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../Services & Plans/Yojna & Services/index.html" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoz">Yozana & Service</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="../../Home/index.html/#ABout" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="business-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">About Village</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="#" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="images-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Gallery</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="https://www.chatbase.co/chatbot-iframe/Mg5Zwc4zz2YEP8rEt-7uh" target="_blank" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Help Center</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a href="www.virudaya.vercel.app" target="_blank" class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="code-slash-outline"></ion-icon>
+          </div>
+          <span class="link-text" id="yoj">Developers</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Main -->
+  <main id="main" class="flexbox-col">
+
+    <div class="bnr">
+        <div class="inn">
+            <h1>
+                Hello!
+            </h1>
+            <h2>
+                Welcome to Tutors Place!
+            </h2>
+            <h4>
+              Find the best <b>Teacher</b> for your Child or yourself, for tutions, Here....
+            </h4>
+            <div class="lang-change">
+                <a href="../../../Hindi/About Village/Gallery/index.html">हिंदी में खोले
+                </a>
+                <!--{Lang. Changer} Hin=Eng-->
+            </div>
+            <h4>
+              Live Yourself as a Teacher to Here...!
+            </h4>
+            <div class="add-ur lang-change">
+                <a href="Add/index.html" target="_blank">Click Here
+                </a>
+                <!--{Lang. Changer} Hin=Eng-->
+            </div>
+        </div>
+    </div>
+<hr>
+
+<!-- Search Bar -->
+    <div class="search-container">
+        <ion-icon class="search-icon" name="search"></ion-icon>
+        <input type="text" id="searchBar" placeholder="Search for a Teacher..." onkeyup="filterServices()">
+    </div>
+<!-- End Search Bar -->
+<!-- No Result -->
+<div id="noResultMessage" style="display: none; text-align: center; color: red; font-size: 1.2rem;">
+    No result found. Try searching other keywords.
+</div>
+<!-- End Of No Result -->
+
+<br>
+
+<!-- Schools Card -->
+
+<!-- Schools -->
+<h2>Teachers or Tutors</h2>
+<div class="services">
+<div class="sevice-card">
+    <img src="Files/TEACHER.jpg" alt="general-store-1">
+    <div class="btn-serv">
+      <a href="https://youtube.com/@khangsresearchcentre1685?si=VBCIdqyd31Zn3Acz" target="_blank">
+        <ion-icon class="yt" name="logo-youtube"></ion-icon>
+      </a>
+
+        <a href="tel:+910123456789" target="_blank">
+            <ion-icon class="call" name="call"></ion-icon>
+        </a>
+
+        <a href="mailto:example.com?body==Hii,%20I%20Found%20Your%20Contact%20From%20Hajauli%20Website." target="_blank">
+            <ion-icon class="mail" name="mail"></ion-icon>
+        </a>
+
+        <a href="https://wa.me/910123456789?text=Hii,+I+Found+Your+Contact+From+Hajauli+Website." target="_blank">
+            <ion-icon class="wha" name="logo-Whatsapp"></ion-icon>
+        </a>
+    </div>
+    <div class="details-serv">
+        <p class="text-serv"><ion-icon name="person"></ion-icon> <b>Falani G</b></p>
+
+        <p class="text-serv"><ion-icon name="school"></ion-icon> <b>Qualification :</b> XYZ</p>
+
+        <p class="text-serv"><ion-icon name="location"></ion-icon> <b>Location :</b> xyz Nagar, xyz muhalla, xyz galli, Example City - 123456</p>
+
+        <p class="text-serv"><ion-icon name="reader"></ion-icon> <b>Description :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis itaque dolorum aliquid molestiae blanditiis obcaecati deserunt quibusdam quidem pariatur maxime autem eius explicabo corporis.</p>
+    </div>
+</div>
+
+
+<br>
+
+
+<div class="sevice-card">
+    <img src="Files/ALAKH.jpg" alt="ALAKH PANDEY">
+    <div class="btn-serv">
+      <a href="https://youtube.com/@khangsresearchcentre1685?si=VBCIdqyd31Zn3Acz" target="_blank">
+        <ion-icon class="yt" name="logo-youtube"></ion-icon>
+      </a>
+
+        <a href="tel:+919005594882" target="_blank">
+            <ion-icon class="call" name="call"></ion-icon>
+        </a>
+
+        <a href="mailto:example.com?body==Hii,%20I%20Found%20Your%20Contact%20From%20Hajauli%20Website." target="_blank">
+            <ion-icon class="mail" name="mail"></ion-icon>
+        </a>
+
+        <a href="https://wa.me/919005594882?text=Hii,+I+Found+Your+Contact+From+Hajauli+Website." target="_blank">
+            <ion-icon class="wha" name="logo-Whatsapp"></ion-icon>
+        </a>
+    </div>
+    <div class="details-serv">
+        <p class="text-serv"><ion-icon name="person"></ion-icon> <b>ALAKH PANDEY</b></p>
+
+        <p class="text-serv"><ion-icon name="school"></ion-icon> <b>Qualification :</b> Bachelor's degree in Mechanical Engineering <em>(From HBTI, Kanpur)</em></p>
+
+        <p class="text-serv"><ion-icon name="location"></ion-icon> <b>Location :</b> Prayagraj, Uttar Pradesh - 211001</p>
+
+        <p class="text-serv"><ion-icon name="reader"></ion-icon> <b>Description :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis itaque dolorum aliquid molestiae blanditiis obcaecati deserunt quibusdam quidem pariatur maxime autem eius explicabo corporis.</p>
+    </div>
+</div>
+<br>
+<div class="sevice-card">
+    <img src="Files/KHAN.jpg" alt="KHAN SIR">
+    <div class="btn-serv">
+        <a href="https://youtube.com/@khangsresearchcentre1685?si=VBCIdqyd31Zn3Acz" target="_blank">
+          <ion-icon class="yt" name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="tel:+917275106585" target="_blank">
+            <ion-icon class="call" name="call"></ion-icon>
+        </a>
+
+        <a href="mailto:mtcs221701@gmail.com?body==Hii,%20I%20Found%20Your%20Contact%20From%20Hajauli%20Website." target="_blank">
+            <ion-icon class="mail" name="mail"></ion-icon>
+        </a>
+
+        <a href="https://wa.me/917275106585?text=Hii,+I+Found+Your+Contact+From+Hajauli+Website." target="_blank">
+            <ion-icon class="wha" name="logo-Whatsapp"></ion-icon>
+        </a>
+    </div>
+    <div class="details-serv">
+        <p class="text-serv"><ion-icon name="person"></ion-icon> <b>FAIZAL KHAN</b></p>
+
+        <p class="text-serv"><ion-icon name="school"></ion-icon> <b>Qualification :</b> Bachelor of Science <b>(B.Sc.)</b> , Master of Science <b>(M.Sc.)</b> , & Master of Arts <b>(M.A.)</b> <em>(in geography)</em></p>
+
+        <p class="text-serv"><ion-icon name="location"></ion-icon> <b>Location :</b> Patna, Bihar - 800001</p>
+
+        <p class="text-serv"><ion-icon name="reader"></ion-icon> <b>Description :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis itaque dolorum aliquid molestiae blanditiis obcaecati deserunt quibusdam quidem pariatur maxime autem eius explicabo corporis.</p>
+    </div>
+</div>
+<br>
+<div class="sevice-card">
+    <img src="Files/DD.jpg" alt="DD SIR">
+    <div class="btn-serv">
+        <a href="https://youtube.com/@khangsresearchcentre1685?si=VBCIdqyd31Zn3Acz" target="_blank">
+          <ion-icon class="yt" name="logo-youtube"></ion-icon>
+        </a>
+        <a href="tel:+919616799355" target="_blank">
+            <ion-icon class="call" name="call"></ion-icon>
+        </a>
+
+        <a href="mailto:pbjs1495@gmail.com?body==Hii,%20I%20Found%20Your%20Contact%20From%20Hajauli%20Website." target="_blank">
+            <ion-icon class="mail" name="mail"></ion-icon>
+        </a>
+
+        <a href="https://wa.me/919616799355?text=Hii,+I+Found+Your+Contact+From+Hajauli+Website." target="_blank">
+            <ion-icon class="wha" name="logo-Whatsapp"></ion-icon>
+        </a>
+    </div>
+    <div class="details-serv">
+        <p class="text-serv"><ion-icon name="person"></ion-icon> <b>DAVESH D.</b></p>
+
+        <p class="text-serv"><ion-icon name="school"></ion-icon> <b>Qualification :</b> N/A</p>
+
+        <p class="text-serv"><ion-icon name="location"></ion-icon> <b>Location :</b> N/A</p>
+
+        <p class="text-serv"><ion-icon name="reader"></ion-icon> <b>Description :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis itaque dolorum aliquid molestiae blanditiis obcaecati deserunt quibusdam quidem pariatur maxime autem eius explicabo corporis.</p>
+    </div>
+</div>
+<br>
+<div class="sevice-card">
+    <img src="Files/DIGRAJ.jpg" alt="DIGRAJ SIR">
+    <div class="btn-serv">
+      <a href="https://youtube.com/@khangsresearchcentre1685?si=VBCIdqyd31Zn3Acz" target="_blank">
+        <ion-icon class="yt" name="logo-youtube"></ion-icon>
+      </a>
+        <a href="tel:+919616799355" target="_blank">
+            <ion-icon class="call" name="call"></ion-icon>
+        </a>
+
+        <a href="mailto:pbjs1495@gmail.com?body==Hii,%20I%20Found%20Your%20Contact%20From%20Hajauli%20Website." target="_blank">
+            <ion-icon class="mail" name="mail"></ion-icon>
+        </a>
+
+        <a href="https://wa.me/919616799355?text=Hii,+I+Found+Your+Contact+From+Hajauli+Website." target="_blank">
+            <ion-icon class="wha" name="logo-Whatsapp"></ion-icon>
+        </a>
+    </div>
+    <div class="details-serv">
+        <p class="text-serv"><ion-icon name="person"></ion-icon> <b>DIGRAJ SINGH RAJPUT</b></p>
+
+        <p class="text-serv"><ion-icon name="school"></ion-icon> <b>Qualification :</b> Bachelor's degree</p>
+
+        <p class="text-serv"><ion-icon name="location"></ion-icon> <b>Location :</b>New Delhi - 110001</p>
+
+        <p class="text-serv"><ion-icon name="reader"></ion-icon> <b>Description :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis itaque dolorum aliquid molestiae blanditiis obcaecati deserunt quibusdam quidem pariatur maxime autem eius explicabo corporis.</p>
+    </div>
+</div>
+<br>
+<div class="sevice-card">
+    <img src="Files/PRASHANT.jpg" alt="PRASHANT SIR">
+    <div class="btn-serv">
+      <a href="https://youtube.com/@khangsresearchcentre1685?si=VBCIdqyd31Zn3Acz" target="_blank">
+        <ion-icon class="yt" name="logo-youtube"></ion-icon>
+      </a>
+
+        <a href="tel:+910123456789" target="_blank">
+            <ion-icon class="call" name="call"></ion-icon>
+        </a>
+
+        <a href="mailto:example.com?body==Hii,%20I%20Found%20Your%20Contact%20From%20Hajauli%20Website." target="_blank">
+            <ion-icon class="mail" name="mail"></ion-icon>
+        </a>
+
+        <a href="https://wa.me/910123456789?text=Hii,+I+Found+Your+Contact+From+Hajauli+Website." target="_blank">
+            <ion-icon class="wha" name="logo-Whatsapp"></ion-icon>
+        </a>
+    </div>
+    <div class="details-serv">
+        <p class="text-serv"><ion-icon name="person"></ion-icon> <b>PRASHANT KIRAD</b></p>
+
+        <p class="text-serv"><ion-icon name="school"></ion-icon> <b>Qualification :</b>  B. Tech in Computer Science <em> (from NSUT Delhi)</em></p>
+
+        <p class="text-serv"><ion-icon name="location"></ion-icon> <b>Location :</b> Aiwar, Rajasthan - 301001</p>
+
+        <p class="text-serv"><ion-icon name="reader"></ion-icon> <b>Description :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis itaque dolorum aliquid molestiae blanditiis obcaecati deserunt quibusdam quidem pariatur maxime autem eius explicabo corporis.</p>
+    </div>
+</div>
+</div>
+
+<!-- Sevice Card -->
+
+<br>
+    </main>
+     <!-- footer -->
+     <div class="footer">
+        <footer>
+          <p>&copy; 2024 | ViruDaya</p>
+        </footer>
+      </div>
+  
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Chatbot Icon -->
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Mg5Zwc4zz2YEP8rEt-7uh";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="incomplete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+</html>
